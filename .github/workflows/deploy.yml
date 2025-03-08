@@ -26,8 +26,9 @@
              # If you have any build steps, add them here
              # For example, you might compile your code or minify files
 
-         - name: Deploy to GitHub Pages
-           uses: peaceiris/actions-gh-pages@v3.9.0
+         - name: Deploy
+           uses: peaceiris/actions-gh-pages@v4
            with:
              github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./  # This should point to the directory containing your built game files
+             publish_dir: ./public
+
