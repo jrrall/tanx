@@ -21,14 +21,9 @@
          - name: Install dependencies
            run: npm install
 
-         - name: Build the game
-           run: |
-             # If you have any build steps, add them here
-             # For example, you might compile your code or minify files
-
          - name: Deploy
            uses: peaceiris/actions-gh-pages@v4
            with:
              github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./public
+             publish_dir: ./
 
