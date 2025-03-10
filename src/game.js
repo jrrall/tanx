@@ -20,6 +20,7 @@ class TankGame extends Phaser.Scene {
     }
 
     update() {
+        
     }
 }
 
